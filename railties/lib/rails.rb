@@ -35,7 +35,7 @@ module Rails
     @application = @app_class = nil
 
     attr_writer :application
-    attr_accessor :app_class, :cache, :logger
+    attr_accessor :app_class, :cache, :logger, :autoloader
     def application
       @application ||= (app_class.instance if app_class)
     end
